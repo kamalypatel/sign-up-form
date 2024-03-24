@@ -61,7 +61,7 @@
 .right-middle h3 {
     color: #212936;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
     margin-top: 0;
 }
@@ -75,13 +75,25 @@
 .right-middle div p {
     display: flex;
     flex-direction: column;
-    width: 300px;
 }
 
 .right-middle div p label {
     color: #2F3743;
     font-size: 0.8rem;
     font-weight: bold;
+}
+
+.right-middle div p input {
+    border: 1px solid lightgray;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    color: black;
+    padding: 2px 0 2px 10px;
+}
+
+.right-middle div p input:focus {
+    border: 1px solid blue;
 }
 
 
@@ -92,5 +104,18 @@
     justify-content: flex-start;
     height: 33vh;
     background-color: #F9FAFB;
-    padding: 20px 200px 15px 20px;
+    padding: 25px 200px 15px 20px;
+    gap: 15px;
+}
+
+.right-bottom button {
+    background-color: #5D6C4C;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: none;
 }
