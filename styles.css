@@ -1,20 +1,27 @@
 .main-container {
     display: flex;
     flex-direction: row;
+    height: 100vh;
+    width: 100vw;
 }
 
 .left-container {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-end;
     align-items: center;
-    justify-items: stretch;
-    width: 40%;
+    background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    width: 40vw;
 }
 
 .right-container {
     display: flex;
     flex-direction: column;
-    justify-items: stretch;
-    width: 60%;
-
+    flex-grow: 1;
+    width: 60vw;
 }
+
