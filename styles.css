@@ -129,6 +129,13 @@
     outline: none;
 }
 
+.error {
+    border: 1px solid red;
+    background-color: transparent;
+    outline: none;
+    color: red;
+}
+
 
 .right-bottom {
     display: flex;
