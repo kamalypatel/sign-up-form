@@ -43,6 +43,8 @@
 
 .black-description {
     font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
 }
 
 .right-middle {
@@ -53,6 +55,7 @@
     height: 33vh;
     background-color: white;
     padding: 15px 200px 15px 20px;
+    filter: drop-shadow(lightgrey 0 5px 5px);
 }
 
 .right-middle h3 {
