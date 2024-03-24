@@ -38,7 +38,7 @@
     justify-content: flex-end;
     height: 34vh;
     background-color: #F9FAFB;
-    padding: 0 100px 30px 20px;
+    padding: 0 100px 30px 30px;
 }
 
 .black-description {
@@ -54,7 +54,7 @@
     justify-content: flex-end;
     height: 33vh;
     background-color: white;
-    padding: 15px 200px 15px 20px;
+    padding: 15px 200px 15px 30px;
     filter: drop-shadow(lightgrey 0 5px 5px);
 }
 
@@ -104,7 +104,7 @@
     justify-content: flex-start;
     height: 33vh;
     background-color: #F9FAFB;
-    padding: 25px 200px 15px 20px;
+    padding: 25px 200px 15px 30px;
     gap: 15px;
 }
 
@@ -113,9 +113,14 @@
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
-    padding: 10px 30px 10px 30px;
+    padding: 15px 40px 15px 40px;
     text-align: center;
     border-radius: 10px;
     border: 0;
     box-shadow: none;
+}
+
+.login {
+    color: #5D6C4C;
+    font-weight: bold;
 }
