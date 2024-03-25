@@ -13,8 +13,14 @@ function clear() {
 
     password.value = ''
     confirmPassword.value = ''
+
     const errorMessage = document.querySelector('#errorMessage')
-    errorMessage.remove()
+    if (errorMessage) {
+        errorMessage.remove()
+        password.classList.remove('error')
+        confirmPassword.classList.remove('error')
+    }
+
 }
 
 function error() {
@@ -22,17 +28,16 @@ function error() {
     const password = document.querySelector('#password')
     const confirmPassword = document.querySelector('#confirmPassword')
 
-    password.classList.add('error')
-    confirmPassword.classList.add('error')
+    const errorMessage = document.querySelector('#errorMessage')
+    if (!errorMessage) {
+        password.classList.add('error')
+        confirmPassword.classList.add('error')
+        const errorMessage = document.createElement("p")
+        errorMessage.innerText = '* Passwords do not match'
+        errorMessage.classList.add('error-message')
+        errorMessage.setAttribute('id', 'errorMessage')
 
-
-
-    const errorMessage = document.createElement("p")
-    errorMessage.innerText = '* Passwords do not match'
-    errorMessage.classList.add('error-message')
-    errorMessage.setAttribute('id', 'errorMessage')
-
-    bottomForm.appendChild(errorMessage);
-
+        bottomForm.appendChild(errorMessage);
+    }
 
 }

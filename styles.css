@@ -131,10 +131,9 @@
 }
 
 .error {
-    border: 1px solid red;
+    border: 1px solid red !important;
     background-color: transparent;
     outline: none;
-    color: red;
 }
 
 .error-message {
